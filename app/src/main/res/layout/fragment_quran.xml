@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_screen"
+    tools:context=".Fragment_quran">
+
+    <TextView
+        android:id="@+id/quran_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/title_quran_screem"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/logo_quran"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".2"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_quran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quran_text_view" />
+      <View
+          android:id="@+id/topview"
+          android:layout_width="wrap_content"
+          android:layout_height="4dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/logo_quran"
+          android:background="@color/gold"/>
+
+    <TextView
+        android:id="@+id/fragment_quran_sora_name_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sora_name"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        android:gravity="center"/>
+
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_quran_sora_name_title"
+        android:background="@color/gold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_quran_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
