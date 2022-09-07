@@ -1,4 +1,4 @@
-package com.example.app_islami
+package com.example.app_islami.pac_quran
 
 
 import android.view.LayoutInflater
@@ -20,6 +20,15 @@ class quran_sora_name_adapter(val list: Array<String>) : Adapter<quran_sora_name
 
     override fun onBindViewHolder(holder: Sora_name_viewholder, position: Int) {
         holder.sora_name_textview.setText(list.get(position))
+        holder.sora_name_textview.setOnClickListener {
+            soranameoncliclisner?.onclic(list.get(position),position)
+        }
+    }
+    var soranameoncliclisner: Oncliclisner? = null
+    interface Oncliclisner{
+        fun onclic(soraname:String,index:Int)
+
+
     }
 
     override fun getItemCount(): Int {

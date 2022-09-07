@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_screen"
     tools:context=".Fragment_sebha">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/head_of_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head_of_sebha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="490dp"
+        />
 
-</FrameLayout>
+
+    <ImageView
+        android:id="@+id/body_of_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/body_of_sebha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="190dp"
+        />
+
+    <TextView
+        android:id="@+id/zikr_number_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="عدد التسبيحات"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/body_of_sebha"/>
+
+    <TextView
+        android:id="@+id/zekr_nuber_textview"
+        android:layout_width="69dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/textview_corner"
+        android:backgroundTint="@color/gold"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zikr_number_textview" />
+
+
+    <Button
+        android:id="@+id/zekr_name_button"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:textStyle="normal"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="@drawable/bottom_corner"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zekr_nuber_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable/bottom_corner.xml" value="0.17" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable/buttomnavigan_icon.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_hadeth_content.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_home_screen.xml" value="0.19010416666666666" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_soranamedeteals.xml" value="0.14739583333333334" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_splash_screen2.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment__radio.xml" value="0.17916666666666667" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_blank_quran.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_blank_radioo.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_fragmint_quran.xml" value="0.1" />
@@ -15,7 +19,10 @@
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_quran.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_quran2.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_radio.xml" value="0.1" />
-        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_sebha.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/fragment_sebha.xml" value="0.18" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/hadeth_content_recyclerview.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/hadeth_number_recyclerview.xml" value="0.14791666666666667" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/hadeth_nunbet_recyclerview.xml" value="0.1015625" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/mahmoud.xml" value="0.25" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/quran_recycler_view.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/sora_name_recycler_view.xml" value="0.15" />

@@ -1,11 +1,13 @@
-package com.example.app_islami
+package com.example.app_islami.pac_quran
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app_islami.R
 
 class Fragment_quran : Fragment(){
     var list = arrayOf<String>(
@@ -31,5 +33,22 @@ class Fragment_quran : Fragment(){
         quranSoraNameAdapter = quran_sora_name_adapter(list)
         sora_name_recyclerview.adapter = quranSoraNameAdapter
 
+        quranSoraNameAdapter.soranameoncliclisner = object: quran_sora_name_adapter.Oncliclisner {
+            override fun onclic(soraname: String, index: Int) {
+                startsoradeteals(soraname, "${index+1}.txt")
+            }
+
+        }
+
+    }
+
+    private fun startsoradeteals(soraname: String,filename :String) {
+
+       var intent : Intent = Intent(activity, soranamedeteals::class.java)
+        intent.putExtra("sora_name",soraname)
+        intent.putExtra("file_name",filename)
+
+
+        startActivity(intent)
     }
 }
