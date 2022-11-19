@@ -7,7 +7,9 @@ import com.example.app_islami.pac_quran.Fragment_quran
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home_screen : AppCompatActivity() {
+
    lateinit var bottomNavigation :BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)

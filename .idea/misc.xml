@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.135" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable/bottom_corner.xml" value="0.17" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable/buttomnavigan_icon.xml" value="0.1" />
+        <entry key="..\:/javaa.cod/app_islami/app/src/main/res/drawable/textview_corner.xml" value="0.135" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_hadeth_content.xml" value="0.1" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_home_screen.xml" value="0.19010416666666666" />
         <entry key="..\:/javaa.cod/app_islami/app/src/main/res/layout/activity_main.xml" value="0.1" />
